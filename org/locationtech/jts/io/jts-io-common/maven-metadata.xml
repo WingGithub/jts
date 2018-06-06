@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.locationtech.jts.io</groupId>
+  <artifactId>jts-io-common</artifactId>
+  <versioning>
+    <versions>
+      <version>1.15.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20180606103446</lastUpdated>
+  </versioning>
+</metadata>
