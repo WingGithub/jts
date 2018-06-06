@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.locationtech.jts</groupId>
+  <artifactId>jts-modules</artifactId>
+  <version>1.15.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20180606.102842</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20180606102842</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.15.1-20180606.102842-1</value>
+        <updated>20180606102842</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
