@@ -95,6 +95,20 @@ public abstract class AbstractSTRtree implements Serializable {
   }
 
   /**
+   * Constructs an AbstractSTRtree with the specified maximum number of child
+   * nodes that a node may have and the expected number of entries in the tree.
+   *
+   * @param nodeCapacity the maximum number of child nodes in a node.
+   * @param treeCapacity the expected number of entries to be added to the tree. Pre-sizes
+   * the entry list for more efficient insertions.
+   */
+  public AbstractSTRtree(int nodeCapacity, int treeCapacity) {
+    Assert.isTrue(nodeCapacity > 1, "Node capacity must be greater than 1");
+    this.nodeCapacity = nodeCapacity;
+    this.itemBoundables = new ArrayList(treeCapacity);
+  }
+
+  /**
    * Creates parent nodes, grandparent nodes, and so forth up to the root
    * node, for the data that has been inserted into the tree. Can only be
    * called once, and thus can be called only after all of the data has been

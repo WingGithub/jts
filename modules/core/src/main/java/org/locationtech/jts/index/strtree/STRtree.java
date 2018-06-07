@@ -173,11 +173,22 @@ implements SpatialIndex, Serializable
    * Constructs an STRtree with the given maximum number of child nodes that
    * a node may have.
    * <p>
-   * The minimum recommended capacity setting is 4.
+   * The minimum recommended node capacity setting is 4.
    * 
    */
   public STRtree(int nodeCapacity) {
     super(nodeCapacity);
+  }
+
+  /**
+   * Constructs an STRtree with the given maximum number of child nodes that
+   * a node may have and the expected number of entries the tree will have.
+   * <p>
+   * The minimum recommended node capacity setting is 4.
+   *
+   */
+  public STRtree(int nodeCapacity, int treeCapacity) {
+    super(nodeCapacity, treeCapacity);
   }
 
   protected AbstractNode createNode(int level) {
